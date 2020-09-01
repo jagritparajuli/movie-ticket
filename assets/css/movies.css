@@ -1,0 +1,15 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  height: 296px;
+  margin: 10px;
+  background: url('https://cdn.pixabay.com/photo/2015/09/02/12/45/movie-918655_960_720.jpg');
+}
+
+.card img {
+  width: 100%;
+}

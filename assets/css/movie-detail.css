@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  display: flex;
+}
+
+.main img {
+  width: 250px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title .rated {
+  background-color: rgb(194, 105, 3);
+  padding: 2px 10px;
+  color: #fff;
+  border-radius: 15px;
+}

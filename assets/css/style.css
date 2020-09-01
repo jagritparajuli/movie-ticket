@@ -1,0 +1,78 @@
+:root {
+  --primary-color: #20d89b;
+  --secondary-color: #1f1f1f;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+header .siteTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid var(--secondary-color);
+  padding: 10px;
+}
+
+.title2 {
+  color: var(--secondary-color);
+}
+
+header form {
+  display: flex;
+}
+.btn {
+  padding: 10px 12px;
+  background-color: var(--secondary-color);
+  font-size: 16px;
+  border: 0;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header input[type='text'] {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 20px 0 0 20px;
+  border: 0;
+  margin: 0;
+}
+
+header .btn {
+  border-radius: 0 20px 20px 0;
+  margin: 0;
+}
+
+.btn:focus,
+input:focus {
+  outline: 0;
+}
+
+.container {
+  padding: 0 100px;
+}
+
+.card.noImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
