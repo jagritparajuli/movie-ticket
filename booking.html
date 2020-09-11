@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/modal2.css" />
+    <link rel="stylesheet" href="./assets/css/booking.css" />
+    <title>Movie Ticket Booking</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo.png" alt="Book Cube"
+        /></a>
+      </div>
+      <div class="serarch">
+        <form id="movie-search">
+          <input type="text" id="search-title" placeholder="Search movies" />
+          <input type="submit" value="Search" class="btn" />
+        </form>
+      </div>
+      <div class="links">
+        <a href="javascript:void(0)">About</a>
+        <a href="javascript:void(0)" id="signin">Signin</a>
+      </div>
+    </header>
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-content">
+          <i class="fas fa-times" id="close-modal"></i>
+          <div class="content">
+            <h2>Confirm Booking</h2>
+            <button id="confirm" class="btn">Yes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <h1 id="movie_name">Movie</h1>
+      <ul class="showCase">
+        <li>
+          <div class="seat"></div>
+          <small>N/A</small>
+        </li>
+        <li>
+          <div class="seat selected"></div>
+          <small>Selected</small>
+        </li>
+        <li>
+          <div class="seat occupied"></div>
+          <small>Occupied</small>
+        </li>
+      </ul>
+      <div class="container-booking">
+        <div class="screen"></div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <div class="row">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+      </div>
+      <p class="text">
+        You have selected <span id="count">0</span> seats for the price of
+        $<span id="total">0</span>
+      </p>
+      <button onclick="showModal()">Book Tickets</button>
+    </div>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <script src="./assets/js/booking.js"></script>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/header.js"></script>
+  <script
+    src="https://kit.fontawesome.com/35055f72c0.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

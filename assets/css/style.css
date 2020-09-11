@@ -1,6 +1,6 @@
 :root {
   --primary-color: #20d89b;
-  --secondary-color: #1f1f1f;
+  --secondary-color: #e57d48;
 }
 * {
   box-sizing: border-box;
@@ -14,25 +14,31 @@ body {
 }
 
 header {
-  background-color: var(--primary-color);
+  background-color: #1f1f1f;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 0 10px;
 }
 
-header .siteTitle {
+header .links {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  font-size: 20px;
-  border: 2px solid var(--secondary-color);
-  padding: 10px;
 }
 
-.title2 {
-  color: var(--secondary-color);
+header .links a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.692);
+  font-size: 20px;
+  padding: 10px 15px;
+}
+header .links a:hover {
+  color: #fff;
+}
+
+.logo img {
+  width: 100px;
+  margin: 0;
 }
 
 header form {
@@ -45,6 +51,7 @@ header form {
   border: 0;
   color: #fff;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 header input[type='text'] {
@@ -58,15 +65,19 @@ header input[type='text'] {
 header .btn {
   border-radius: 0 20px 20px 0;
   margin: 0;
+  cursor: pointer;
 }
 
 .btn:focus,
-input:focus {
+input:focus,
+button {
   outline: 0;
 }
 
 .container {
   padding: 0 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .card.noImg {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/signin.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css" />
+    <title>Sign In</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo.png" alt="Book Cube"
+        /></a>
+      </div>
+      <div class="serarch">
+        <form id="movie-search">
+          <input type="text" id="search-title" placeholder="Search movies" />
+          <input type="submit" value="Search" class="btn" />
+        </form>
+      </div>
+      <div class="links">
+        <a href="javascript:void(0)">About</a>
+        <a href="javascript:void(0)" id="signin">Signin</a>
+      </div>
+    </header>
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <div class="modal-content">
+          <i class="fas fa-times" id="close-modal"></i>
+          <div class="content">
+            <p>Sign Up completed successfully.</p>
+            <p>Sign in to access your account.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="alert">
+      <p id="error">Error Message</p>
+    </div>
+    <div class="container">
+      <div>
+        <h2>Sign In</h2>
+        <p>Already have an account.</p>
+        <form id="signin">
+          <input type="email" placeholder="Email" id="signin_email" />
+          <input type="password" placeholder="Password" id="signin_password" />
+          <input type="submit" class="btn" value="Sign In" />
+        </form>
+      </div>
+      <div>
+        <h2>Sign Up</h2>
+        <p>Create a new account with Email</p>
+        <form id="signup">
+          <input type="text" placeholder="Full Name" id="name" />
+          <input type="email" placeholder="Email" id="signup_email" />
+          <input type="password" placeholder="Password" id="signup_password" />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="signup_password2"
+          />
+          <input type="submit" class="btn" value="Sign Up" />
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/js/modal.js"></script>
+  <script src="./assets/js/signin.js"></script>
+  <script src="./assets/js/header.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <script
+    src="https://kit.fontawesome.com/35055f72c0.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

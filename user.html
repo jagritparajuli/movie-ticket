@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/user.css" />
+    <title>User</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo.png" alt="Book Cube"
+        /></a>
+      </div>
+      <div class="serarch">
+        <form id="movie-search">
+          <input type="text" id="search-title" placeholder="Search movies" />
+          <input type="submit" value="Search" class="btn" />
+        </form>
+      </div>
+      <div class="links">
+        <a href="javascript:void(0)">About</a>
+        <a href="javascript:void(0)" id="signin">Signin</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="details">
+        <h2>User Profile : <span id="username">--</span></h2>
+        <img
+          src="https://api.adorable.io/avatars/8"
+          alt="user-img"
+          id="avatar"
+        />
+        <ul id="info">
+          <li>Name: --</li>
+          <li>Email: --</li>
+          <li>Active: Yes <i class="fas fa-circle active"></i></li>
+          <li>Tickets: --</li>
+        </ul>
+      </div>
+      <div class="tickets">
+        <h2>Your Tickets</h2>
+        <p>Click to view your seats</p>
+        <ul id="tickets">
+          <li>
+            <span>--</span>
+            <span>-- x seats</span>
+            <span>Rs.--</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/35055f72c0.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+  <script src="./assets/js/user.js"></script>
+  <script src="./assets/js/header.js"></script>
+</html>

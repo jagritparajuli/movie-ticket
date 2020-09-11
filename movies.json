@@ -27,5 +27,45 @@
       "imdbID": "tt1086064",
       "price": "600"
     }
-  ]
+  ],
+  "users": [
+    {
+      "id": "UiEOSK",
+      "name": "Jagrit Parajuli",
+      "email": "jagritparajuli99@gmail.com",
+      "password": "123456",
+      "tickets": {
+        "movie": "Tenet",
+        "movie_id": "tt6723592",
+        "seats": [
+          8,
+          9
+        ],
+        "price": 900
+      }
+    },
+    {
+      "id": "NXCsF5",
+      "name": "John Doe",
+      "email": "johndoe@mail.com",
+      "password": "123456",
+      "tickets": {
+        "movie": "Bill & Ted Face the Music",
+        "movie_id": "tt1086064",
+        "seats": [
+          2,
+          10
+        ],
+        "price": 1200
+      }
+    }
+  ],
+  "booked_tickets": {
+    "booked": [
+      0,
+      1,
+      2,
+      10
+    ]
+  }
 }

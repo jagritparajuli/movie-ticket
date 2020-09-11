@@ -6,7 +6,7 @@ async function getMovies() {
   let code = '';
   movies.map((movie) => {
     code += `
-    <div class="card" onclick = "goToMovie('${movie.imdbID}')">
+    <div class="card" onclick = "goToMovie('${movie.imdbID}','${movie.price}')">
       <img src = "${movie.image_url}" alt="${movie.title}">
     </div>
     `;
@@ -14,8 +14,8 @@ async function getMovies() {
   content.innerHTML = code;
 }
 
-function goToMovie(id) {
-  window.location = '/movie_detail.html?id=' + id;
+function goToMovie(id, price) {
+  window.location = `/movie_detail.html?id=${id}&${price}`;
 }
 
 getMovies();

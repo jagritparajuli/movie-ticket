@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.details {
+  border: 2px solid #eee;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.details img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.details ul {
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+}
+
+.details ul li {
+  margin: 10px 0;
+}
+
+.tickets {
+  border: 2px solid #ddd;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tickets ul {
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+}
+
+.tickets ul li {
+  width: 100%;
+  margin: 1px;
+  border: 1px solid #ddd;
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.tickets ul li:hover {
+  background-color: #eee;
+}
+
+.active {
+  color: rgb(26, 206, 56);
+}

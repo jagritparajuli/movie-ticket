@@ -3,22 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/movie-detail.css" />
     <title>MovieDetail</title>
   </head>
   <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./assets/img/logo.png" alt="Book Cube"
+        /></a>
+      </div>
+      <div class="serarch">
+        <form id="movie-search">
+          <input type="text" id="search-title" placeholder="Search movies" />
+          <input type="submit" value="Search" class="btn" />
+        </form>
+      </div>
+      <div class="links">
+        <a href="javascript:void(0)">About</a>
+        <a href="javascript:void(0)" id="signin">Signin</a>
+      </div>
+    </header>
     <div class="container">
       <div class="main">
         <img
+          id="poster"
           src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
           alt="inception"
         />
         <div class="info">
           <div class="title">
-            <h1>Inception</h1>
-            <span class="rated">PG-13</span>
+            <h1 id="title">Inception</h1>
+            <span class="rated" id="rated">PG-13</span>
           </div>
-          <ul>
+          <ul id="extra">
             <li><strong> Director:</strong> "Christopher Nolan"</li>
             <li><strong>Runtime:</strong> "148 min""</li>
             <li><strong> Director:</strong> "Christopher Nolan"</li>
@@ -26,22 +45,32 @@
             <li><strong> Director:</strong> "Christopher Nolan"</li>
             <li><strong>Runtime:</strong> "148 min""</li>
             <li><strong> Director:</strong> "Christopher Nolan"</li>
-            <li><strong>Runtime:</strong> "148 min""</li>
-            <li><strong> Director:</strong> "Christopher Nolan"</li>
-            <li><strong>Runtime:</strong> "148 min""</li>
           </ul>
-          <button>Book Tickets</button>
+          <button id="book-tickets">Book Tickets</button>
         </div>
       </div>
       <div class="description">
-        <p>
-          A thief who steals corporate secrets through the use of dream-sharing
-          technology is given the inverse task of planting an idea into the mind
-          of a C.E.O.
+        <h3>Plot</h3>
+        <p id="plot">
+          Dom Cobb is a skilled thief, the absolute best in the dangerous art of
+          extraction, stealing valuable secrets from deep within the
+          subconscious during the dream state, when the mind is at its most
+          vulnerable. Cobb's rare ability has made him a coveted player in this
+          treacherous new world of corporate espionage, but it has also made him
+          an international fugitive and cost him everything he has ever loved.
+          Now Cobb is being offered a chance at redemption. One last job could
+          give him his life back but only if he can accomplish the impossible -
+          inception. Instead of the perfect heist, Cobb and his team of
+          specialists have to pull off the reverse: their task is not to steal
+          an idea but to plant one. If they succeed, it could be the perfect
+          crime. But no amount of careful planning or expertise can prepare the
+          team for the dangerous enemy that seems to predict their every move.
+          An enemy that only Cobb could have seen coming.
         </p>
       </div>
     </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
   <script src="./assets/js/movie-detail.js"></script>
+  <script src="./assets/js/header.js"></script>
 </html>
