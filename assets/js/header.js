@@ -1,4 +1,4 @@
-const sigin = document.getElementById('signin');
+const sigin = document.getElementById('signinLink');
 const links = document.querySelector('.links');
 if (sessionStorage.getItem('user_id')) {
   sigin.innerText = 'Sign Out';
@@ -16,5 +16,3 @@ if (sessionStorage.getItem('user_id')) {
   sigin.innerText = 'Sign in';
   sigin.href = 'signin.html';
 }
-
-console.log(sessionStorage.getItem('user_id'));

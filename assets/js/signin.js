@@ -1,4 +1,4 @@
-const sigin_form = document.getElementById('signin');
+const signin_form = document.getElementById('signin');
 const email_in = document.getElementById('signin_email');
 const password_in = document.getElementById('signin_password');
 
@@ -104,7 +104,8 @@ function generateID(len) {
 }
 
 // Sign in event listener
-sigin_form.addEventListener('submit', (e) => {
+signin_form.addEventListener('submit', (e) => {
+  console.log(e);
   e.preventDefault();
   signinValidation();
 });
